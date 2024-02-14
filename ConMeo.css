@@ -1,0 +1,70 @@
+html {
+    
+    background: url("Browser Games - Nealfun Games - 99 Accuracy Background.png") repeat;
+    background-size: 50%;
+    -webkit-animation: scrolling 15s linear infinite;
+    -moz-animation: scrolling 15s linear infinite;
+    -o-animation: scrolling 15s linear infinite;
+    animation: scrolling 15s linear infinite;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    color: #000000;
+   
+}
+@keyframes scrolling {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 256px -256px;
+    }
+}
+#move3 {
+    display: inline-block;
+    animation: rotation3 2s infinite ease;
+  }
+.container {
+    position: relative;
+    margin:auto;
+  }
+@keyframes rotation3 {
+    33% {
+      transform: rotate(-3deg);
+    }
+    66% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+.mobileShow { display: none;}
+/* Smartphone Portrait and Landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){ .mobileShow { display: inline;}}
+.wrapper{
+max-width:100%;
+box-sizing:border-box;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+}
+.CONMEO{
+font-family: TuyetSac,'Montserrat', sans-serif;
+font-size: 250px;
+color: #ffffff3a;
+font-weight: 100;
+text-transform: uppercase;
+line-height: normal;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+

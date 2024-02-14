@@ -1,0 +1,193 @@
+    *{
+    box-sizing: border-box;
+    }
+    body {
+        font-family: "MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif; 
+        background: teal;
+        color: white;
+        padding-bottom: 28px;
+    }
+    .desktop-icon{
+        
+        width: 115px;
+        height: 100px;
+        color: #fff;
+        text-align: center;
+        background: no-repeat center top;
+        padding-top: 55px;
+        &.my-computer{
+            background-image: url('computer_explorer_cool-0.png');
+        }
+        &.my-document{
+            background-image: url('directory_open_file_mydocs-4.png');
+        
+        }
+        &.recycle-bin{
+            background-image: url('recycle_bin_empty-4.png');
+        }
+        &.internet-explorer{
+            background-image: url('msie1-2.png');
+        }
+        &.network-neighborhood{
+            background-image: url('network_cool_two_pcs-0.png');
+        }
+        &.my-picture{
+            background-image: url('directory_open_file_mydocs_2k-4.png');
+        }
+        &.minesweeper{
+            background: no-repeat center;
+            background-position-y: 18px;
+            background-image: url('game_mine_1-0.png');
+        }
+        &.freecell{
+            background: no-repeat center;
+            background-position-y: 18px;
+            background-image: url('game_freecell-2.png');
+        }
+
+    }
+    .mod100{
+        position: absolute;
+        top: 43.5%;
+        left: 63%;
+    }
+
+    .taskbar{
+        background-color: silver;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border-top: 2px outset #fff;
+        width: 100%;
+    }
+    .taskbar .start-button {
+        cursor: default;
+        display: inline-block;
+        border: 2px outset #fff;
+        padding: 3px;
+        box-shadow: 1px 1px #000;
+        margin-bottom: 2px;
+        font-size: 16px;
+        position: relative;
+        color: #000;
+        font-weight: bold;
+    }
+    .taskbar .time {
+        color:#212529;
+        margin-top: 2px;
+    
+        text-align: right;
+        font-size: 14px;
+        margin-right: 0px;
+    }
+    .start-icon{
+        position: relative;
+        bottom: 10%;
+        left:0.2%;
+    }
+    .menu-bar{
+        list-style-type: none;
+        margin: 0;
+        padding: 2px 0 2px 2px;
+    }
+    .menu-bar li{
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 2px;
+        
+    }
+    .duma{
+        position: absolute;
+        top: 200px;
+        right: 40%;
+    }
+    abc{
+        font-size: 14px;
+    }
+    ul.tree-view{
+        display: none;
+        overflow:hidden;
+        overflow:scroll;
+    }
+    .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+    .musicwindow {
+        position:absolute;
+        max-width: 200px;
+        min-width:200px;
+        min-height: 55px;
+        background: black;
+        background-color: #D1D5DB;
+        display:block;
+        color:white;
+        box-shadow:
+        inset -1px -1px #0a0a0a,
+        inset 1px 1px #dfdfdf,
+        inset -2px -2px grey,
+        inset 2px 2px #fff;
+        padding:3px 4px 0px 4px;
+    }
+    
+    .music-box {
+        font-size: 13px;
+        color: white;
+        width: 196px;
+        height: 25px;
+        border: 2px ridge #7B7B7B;
+        overflow:hidden;
+        margin-top:3px;
+        background-color:black;
+    }
+    .cd-player{
+        position: absolute;
+        top: 529px;
+        left: 25.99%;
+    }
+    list{
+        text-indent: 100px;
+        font-size: 12px;
+        color:rgb(51, 15, 255);
+    }
+    .update{
+        position: absolute;
+        top: 226px;
+        left: 20.4%;
+    }
+    
+    .snowflake {
+        color: (8, 115, 255)FFFF;
+        font-size: 20px;
+        font-family: ms gothic;
+        font-weight:bold;
+    }
+    
+    @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+    @-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}
+    @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+    @keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+    .error1{
+        position: absolute;
+        top: 530px;
+        left: 60%;
+    }
+    .error2{
+        position: absolute;
+        top: 560px;
+        left: 63%;
+    }
+    .error3{
+        position: absolute;
+        top: 590px;
+        left: 66%;
+    }
+    .Wow{
+        position: absolute;
+        top: 150px;
+        left: 61%;
+    }

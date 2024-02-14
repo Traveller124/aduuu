@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>★ Tín's Zone ★</title>
+        <script>
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        </script>
+        <link rel="stylesheet" href="TrangChu.css">
+        <link rel="icon" type="image/x-icon" href="https://graphic.neocities.org/tumblr_lmzr83DuKn1qg9aa7.png">
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    </head>
+    <body>
+    <main>
+        <div class="duma">
+        <div class="window" style="margin: 0px; width: 450px; height: 400px;">
+            <div class="title-bar">
+              <div class="title-bar-text">
+                <img src="notepad-0.png" width="11px">
+                Welcome - Notepad
+              </div>
+              
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+
+              </div>
+            </div>
+            <ul class="menu-bar">
+            <li><span style="text-decoration: underline;">F</span>ile</li> 
+            <li><span style="text-decoration: underline;">E</span>dit</li>  
+            <li><span style="text-decoration: underline;">S</span>earch</li> 
+            <li><span style="text-decoration: underline;">H</span>elp</li> 
+            </ul>
+            <div class="content">
+            <ul class="tree-view"style="margin: 0px; width: 443px; height: 356px;">
+<li><abc>Xin chào!!!!</abc></li> 
+<li><abc>Chào mừng cậu ghé thăm trang web của tui:</abc></li>
+<li style="font-size: 18px; text-align: center;">⋆⁺₊⋆ ☾⋆⁺₊⋆</li>
+<li style="font-size: 18px; text-align: center; color: blueviolet;">✨Tín's Zone✨</li>
+<li style="font-size: 18px; text-align: center;">⋆⁺₊⋆ ☾⋆⁺₊⋆</li>
+<li style="text-align: right; font-size: 11px">//Tên để tạm vì không nghĩ ra được tên hay hơn :>//</li>
+<br>
+<li><abc>=|About Me|=</abc></li>
+<li><abc>⟡Tên: Lê Bảo Tín</abc></li>
+<li><abc>⟡Sinh Nhật: 27/11</abc></li>
+<li><abc>⟡Cung: Nhân Mã 🏹</abc></li>
+<li><abc>⟡Tình Trạng Hôn Nhân: Độc Mã</abc></li>
+<li><abc>⟡Màu sắc: Xanh Dương Đậm</abc></li>
+<li><abc>⟡Động vật: Chó, Mèo, Khỉ,...miễn cute :3</abc></li>
+<li><abc>------------------------------------------------------</abc></li>
+<li><abc>Trang Web này chỉ đơn giản là 1 không gian riêng của mình.
+  Nơi mình sẽ chia sẻ về những cái mình thích như phim ảnh, game, anime, tranh pixel, thiết kế, code...
+  Trang Web này sẽ có thêm thật nhiều update thú vị, mình mong rằng các bạn sẽ thích nó ^^</abc></li> 
+  
+            </ul>
+            </div>
+          </div> 
+        
+        <div>
+        </div>
+    </div>
+    </main>
+    <div class="cd-player">
+      <div class="window" style="margin: 0px; width: 202px; height: 71px;">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            <img src="cd_audio_cd-1.png" width="11px">
+            CD Player
+          </div>
+          
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+
+          </div>
+          
+        </div>
+        <ul class="menu-bar">
+        <li><span style="text-decoration: underline;">D</span>isc</li> 
+        <li><span style="text-decoration: underline;">V</span>iew</li>  
+        <li><span style="text-decoration: underline;">O</span>ptions</li> 
+        <li><span style="text-decoration: underline;">H</span>elp</li> 
+        </ul>
+        <div class="music-box">
+      <button style="background-color:transparent; font-family:ms gothic; border:0px; width:235px; margin-left:-5px; font-size:18px; color:white;cursor:pointer;" onclick="playpause()">
+        <div class="button"> <span style="position:absolute;margin-top:2px;margin-left:-15px;">&#9654;</span>
+          <marquee style="width:180px; font-size:18px; font-family:ms ui gothic; margin-bottom:-5px; margin-top:2px; background:transparent; font-weight:bold; ">
+            japan -prod.jk8
+          </marquee>
+        </div>
+      </button>
+    </div>
+  </div>
+  <audio autoplay loop ="boxmusic" src="japan -prod.jk8.mp3"></audio>
+  <!-- MUSIC SCRIPT START -->
+    <script>
+	let player = document.getElementById("boxmusic"); //the audio id
+    let btn = document.getElementById("btn"); //the button id
+    isPlaying = false; //set to false because it is not playing yet
+ 
+    function playpause() {
+        if (!isPlaying) play(); //if isPlaying is false, then play the music
+        else pause(); //if isPlaying is true, then pause the music
+    }
+ 
+    function play(){
+        player.play(); //play the music
+        isPlaying = true; //set to true because the music is playing
+        btn.innerHTML = "pause"; //change the button to say pause
+    }
+ 
+    function pause(){
+        player.pause(); //pause the music
+        isPlaying = false; //set to false because the music is not playing
+        btn.innerHTML = "play"; //change the button to say play
+    }
+ 
+    player.onended = function(){
+        isPlaying = false; //the song has ended, isPlaying is false
+        btn.innerHTML = "play"; //change the button to say play
+    }
+  </script>
+  <!-- MUSIC SCRIPT END -->
+  <!-- AUTO VOLUME SCRIPT START -->
+  <script>
+    var audio = document.getElementById("boxmusic");
+    audio.volume = 0.4;
+  </script>
+    </div>
+  <div class="update">
+    <div class="window" style="margin: 0px; width: 308px; height: 300px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <img src="notepad-0.png" width="11px">
+          Update- Notepad
+        </div>
+        
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+
+        </div>
+      </div>
+      <ul class="menu-bar">
+      <li><span style="text-decoration: underline;">F</span>ile</li> 
+      <li><span style="text-decoration: underline;">E</span>dit</li>  
+      <li><span style="text-decoration: underline;">S</span>earch</li> 
+      <li><span style="text-decoration: underline;">H</span>elp</li> 
+      </ul>
+      <div class="content">
+      <ul class="tree-view"style="margin: 0px; width: 300px; height: 256px;">
+<li><abc>CẬP NHẬT</abc></li> 
+<li><abc>//đây sẽ là nơi để mình đăng những update cho website//</abc></li>
+<li><abc>-------------------------------------------------------</abc></li>    
+<li><abc>14-2-2024: Website được thành lập.</abc></li>
+<li><abc>-Thứ hiện tại cần phải hoàn thành:</abc></li>
+<li><list>+ 1 cái cd player giống với win 98 với đầy đủ chức năng.</list></li>
+<li><list>+ Làm cho cửa sổ Window có thể được kéo thả.</list></li>
+<li><list>+ Chưa biết nên làm gì tiếp thôi tính sau :></list></li>
+      </ul>
+      </div>
+    </div> 
+  
+  <div>
+  </div>
+  </div>
+  <div class="Wow">
+    <div class="window" style="margin: 0px; width: 408px; height: 250px;">
+      <div class="title-bar">
+        <div class="title-bar-text">
+          <img src="notepad-0.png" width="11px">
+          Điều Thầm Kín Của Tớ👉👈- Notepad
+        </div>
+        
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+
+        </div>
+      </div>
+      <ul class="menu-bar">
+      <li><span style="text-decoration: underline;">F</span>ile</li> 
+      <li><span style="text-decoration: underline;">E</span>dit</li>  
+      <li><span style="text-decoration: underline;">S</span>earch</li> 
+      <li><span style="text-decoration: underline;">H</span>elp</li> 
+      </ul>
+      <div class="content">
+      <ul class="tree-view"style="margin: 0px; width: 400px; height: 206px;">
+<li><abc>Chào cậu nhe Uyên,</abc></li> 
+<li><abc>Thì điều đầu tiên mình muốn nói là...</abc></li>
+<li><abc>----</abc></li>  
+<li><abc>Hôm nay là lễ <span style="color: palevioletred;">Valentine.</span></abc></li>
+<li><abc>Mình muốn dùng website này để thay lời tỏ tình của mình 😳.</abc></li>
+
+<li><abc>----</abc></li>  
+<li><abc>Bình thường thì người thích người khác sẽ muốn tỏ tình mà đúng không? Mình thắc mắc là không biết cậu có ai chưa. Mình để ý cậu từ lúc mình vào học ké lớp cậu. Xin lỗi có lẽ đối với cậu, mình chỉ là người lạ. Lúc đó mình cũng chẳng tới bắt chuyện hay gì.</abc></li>  
+<li><abc>----</abc></li>
+<li><abc>Đối với mình, cậu trông thật là dễ thương. Bạn lớp cậu kể với mình là cậu cũng hơi chiến á, nhớ không lầm thì cậu chặn đầu xe tải hay đâm vào đuôi xe tải xong chạy đúng khôngggg. Cậu cũng kinh phết.</abc></li>
+<li><abc>----</abc></li>
+<li><abc>À ngoài dễ thương ra thôi, Mình thấy cậu siêu đẹp nè, dáng người nhỏ nhỏ xinh xinh. Siêu mê cậu lunnn á. Mình rất muốn biết rõ hơn về cậu. Vẻ bề ngoài ít nói, lạnh lùng của cậu thật sự đã làm mình ấn tượng</abc></li>
+<li><abc>----</abc></li>   
+<li><abc>Cho nên là nếu được cậu có muốn...cậu biết đó...hẹn hò với mình không?</abc></li>
+<li><abc>----</abc></li>
+<li><abc>Á chết tiệt ngại quá!!! Phải lèm seoooo.</abc></li>
+<li><abc>----</abc></li>
+<li><abc>Cậu đồng ý chứ? Nếu không thì mình cũng không sao đâu cậu đừng lo, chúng ta cũng có thể làm bạn mà!!!!</abc></li>
+<li><abc>----</abc></li>
+<li>Thân Gửi, Tín.</li>      
+      </ul>
+      </div>
+    </div> 
+  
+  <div>
+  </div>
+  </div>
+    <background>
+        <div class="desktop-icon">
+            <div class="desktop-icon my-computer">My Computer</div>
+            <div class="desktop-icon my-document">My Document</div> 
+            <div class="desktop-icon recycle-bin">Recycle Bin</div>
+            <div class="desktop-icon internet-explorer">Internet Explorer</div>
+            <div class="desktop-icon network-neighborhood">Network Neighborhood</div>
+            <div class="desktop-icon my-picture">My Picture</div>
+            <div class="desktop-icon minesweeper">Minesweeper</div>
+            <div class="desktop-icon freecell">Freecell</div>
+        </div>
+        <div class="error1">
+          <div class="window" style="margin: 0px; width: 308px; height: auto;">
+            <div class="title-bar">
+              <div class="title-bar-text">
+                Microsoft Datalink
+              </div>
+              <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <p ><img src="msg_warning-0.png" style="margin-right: 10px; position: relative; transform: translateY(8px);"><abc style="text-align: center;">Unexpected Error. Please Investigate.</abc></p>
+          </div>
+          <button style="position: relative; left:37.8%; margin-bottom: 1px;">Ok</button>
+          
+        </div>
+        </div>
+       
+        <div class="error2">
+          <div class="window" style="margin: 0px; width: 308px; height: auto;">
+            <div class="title-bar">
+              <div class="title-bar-text">
+                Microsoft Datalink
+              </div>
+              <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <p ><img src="msg_warning-0.png" style="margin-right: 10px; position: relative; transform: translateY(8px);"><abc style="text-align: center;">Unexpected Error. Please Investigate.</abc></p>
+          </div>
+          <button style="position: relative; left:37.8%; margin-bottom: 1px;">Ok</button>
+          
+        </div>
+        </div>
+        <div class="error3">
+          <div class="window" style="margin: 0px; width: 308px; height: auto;">
+            <div class="title-bar">
+              <div class="title-bar-text">
+                Microsoft Datalink
+              </div>
+              <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+          </div>
+      
+          <div class="window-body">
+            <p ><img src="msg_warning-0.png" style="margin-right: 10px; position: relative; transform: translateY(8px);"><abc style="text-align: center;">Unexpected Error. Please Investigate.</abc></p>
+          </div>
+          <button style="position: relative; left:37.8%; margin-bottom: 1px;">Ok</button>
+          
+        </div>
+        </div>
+        
+        <div class="mod100">
+            <img src="https://graphic.neocities.org/d1dd4de1-01d1-4c13-98e2-f676f0f4771e.gif" >
+        </div>
+  </background>
+
+        <footer class="taskbar">
+                <div class="start-button">
+                    <a><img src="windows-4.png" class="start-icon">Start</a>
+                </div>
+           
+        </footer>
+        <div class="snowflakes">
+          <div class="snowflake">
+            ☆
+          </div>
+          <div class="snowflake">
+            ✦
+          </div>
+          <div class="snowflake">
+            ★
+          </div>
+          <div class="snowflake">
+            ✧
+          </div>
+          <div class="snowflake">
+            ✷
+          </div>
+          <div class="snowflake">
+            ✤
+          </div>
+          <div class="snowflake">
+            ✽
+          </div>
+          <div class="snowflake">
+            ❄
+          </div>
+          <div class="snowflake">
+            ༚
+          </div>
+          <div class="snowflake">
+            o
+          </div>
+          <div class="snowflake">
+            ·
+          </div>
+        </div>     
+    </body>
